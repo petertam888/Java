@@ -1,17 +1,18 @@
 import edu.princeton.cs.algs4.*;
 
-public class RandomWorld {
-
+public class RandomWord {
     public static void main(String[] args) {
-        String champion = "";
+        String word, champion = null;
+        int i = 0;
 
-        for (int i = 1; !StdIn.isEmpty(); i++){
-            String contender = StdIn.readString();
-            if (StdRandom.bernoulli(1/i)){
-                champion = contender;
+        while(!StdIn.isEmpty()){
+            i++;
+            word = StdIn.readString();
+            if (StdRandom.bernoulli(1/i){
+                champion = word;
             }
         }
-        System.out.println(champion);
+        StdOut.println(champion);
         }
     }
 
